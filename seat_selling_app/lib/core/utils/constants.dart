@@ -1,7 +1,7 @@
 import 'package:seat_selling_app/domain/entity/seat_entity.dart';
 
 class Constants {
-  static const String baseApiUrl = '';
+  static const String baseApiUrl = 'www.google.com';
   static const String apiKey = 'API_KEY';
   static const int timeoutDuration = 30;
   // variables to help running project without the need for api
