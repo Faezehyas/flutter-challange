@@ -13,7 +13,13 @@ import 'package:seat_selling_app/domain/usecase/stadium_usecase.dart';
 
 final getIt = GetIt.instance;
 
+/// Configures the dependency injection container for the application.
+///
+/// This function registers all the necessary dependencies used throughout
+/// the app. It uses a combination of singletons and factories for different
+/// types of dependencies.
 Future<void> configureDependencies() async {
+  // Register network client as a singleton (one instance throughout app)
   getIt.registerSingleton<Request>(Request());
 
   getIt.registerFactory<AuthUseCase>(() => AuthUseCase());

@@ -20,6 +20,8 @@ class AuthDataSourceImpl extends AuthDataSource {
       if (response.statusCode == 200) {
         // check validations needed and return response
         return response.data as UserModel;
+      } else {
+        // check for other status codes
       }
       return null;
     } catch (error) {
